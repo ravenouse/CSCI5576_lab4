@@ -43,6 +43,8 @@ using std :: endl;
 #define cLOOP  for ( int c = 1 ; c <= bandwidth ; ++c )
 #define iLOOP  for ( int i = 1 ; i <= nRealx    ; ++i )
 #define jLOOP  for ( int j = 1 ; j <= nRealy    ; ++j )
+#define hiLOOP for ( int i = 1 ; i <= int(nRealx/2) ; ++i )
+#define hjLOOP for ( int j = 1 ; j <= int(nRealy/2) ; ++j )
 #define sLOOP  for ( int s = 0 ; s <= nRealx+1  ; ++s )
 #define tLOOP  for ( int t = 0 ; t <= nRealy+1  ; ++t )
 

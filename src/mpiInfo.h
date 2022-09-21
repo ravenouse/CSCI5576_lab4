@@ -320,9 +320,55 @@ class mpiInfo
 
   void PEsum( VD &field )
   {
+    // no boundary conditions. just sum up the q values on the boundary nodes
+    // refer to the posion solver in the previous assignment.
+    // set qvalue to 1 on the one processor.
+    sLOOP phiSend_n[s] = 0.;
+    sLOOP phiSend_s[s] = 0.;
+    tLOOP phiSend_e[t] = 0.;
+    tLOOP phiSend_w[t] = 0.;
 
 
+    // (1) Parallel communication on PE boundaries
+    // (1.1) Record values on PE physical boundaries
+    tLOOP phiL[t] = field[pid(1,t)]; // why minus 1? 
+    tLOOP phiR[t] = field[pid(nRealx,t)];
+    sLOOP phiT[s] = field[pid(s,nRealy)];
+    sLOOP phiB[s] = field[pid(s,1)];
+
+    // (1.2) Put them into communication arrays
+    sLOOP phiSend_n[s] = phiT[s];
+    sLOOP phiSend_s[s] = phiB[s];
+    tLOOP phiSend_e[t] = phiR[t];
+    tLOOP phiSend_w[t] = phiL[t];
+
+    // (1.3) Send them to neghboring PEs
+    if (nei_n >= 0) MPI_Isend(phiSend_n, countx, MPI_DOUBLE, nei_n,tag, MPI_COMM_WORLD, &request);
+    if (nei_s >= 0) MPI_Isend(phiSend_s, countx, MPI_DOUBLE, nei_s,tag, MPI_COMM_WORLD, &request);
+    if (nei_e >= 0) MPI_Isend(phiSend_e, county, MPI_DOUBLE, nei_e,tag, MPI_COMM_WORLD, &request);
+    if (nei_w >= 0) MPI_Isend(phiSend_w, county, MPI_DOUBLE, nei_w,tag, MPI_COMM_WORLD, &request);
+
+    // (1.4) Receive them from neghboring PEs
+    if (nei_n >= 0) { MPI_Irecv(phiRecv_n, countx, MPI_DOUBLE, nei_n,tag, MPI_COMM_WORLD, &request);  MPI_Wait(&request,&status);}
+    if (nei_s >= 0) { MPI_Irecv(phiRecv_s, countx, MPI_DOUBLE, nei_s,tag, MPI_COMM_WORLD, &request);  MPI_Wait(&request,&status);}
+    if (nei_e >= 0) { MPI_Irecv(phiRecv_e, county, MPI_DOUBLE, nei_e,tag, MPI_COMM_WORLD, &request);  MPI_Wait(&request,&status);}
+    if (nei_w >= 0) { MPI_Irecv(phiRecv_w, county, MPI_DOUBLE, nei_w,tag, MPI_COMM_WORLD, &request);  MPI_Wait(&request,&status);}
+
+    // (1.5) if new information was received, add them to the current values
+
+    if (nei_n >= 0) sLOOP phiT[s] += phiRecv_n[s];
+    if (nei_s >= 0) sLOOP phiB[s] += phiRecv_s[s];
+    if (nei_e >= 0) tLOOP phiR[t] += phiRecv_e[t];
+    if (nei_w >= 0) tLOOP phiL[t] += phiRecv_w[t];
+
+
+    // (1.6) Put the new values back into the field array
+    sLOOP field[pid(s,nRealy)] = phiT[s];
+    sLOOP field[pid(s,1)] = phiB[s];
+    tLOOP field[pid(nRealx,t)] = phiR[t];
+    tLOOP field[pid(1,t)] = phiL[t];
   }
+    
 
 
   

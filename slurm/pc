@@ -1,0 +1,282 @@
+set xrange [-.1:1.1]
+set yrange [-.1:1.1]
+splot \
+"mesh_0_0.plt" w l , "ptcl_0_0.plt" w d lw 2, \
+"mesh_1_0.plt" w l , "ptcl_1_0.plt" w d lw 2, \
+"mesh_2_0.plt" w l , "ptcl_2_0.plt" w d lw 2, \
+"mesh_3_0.plt" w l , "ptcl_3_0.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_0.plt" w l , "ptcl_0_0.plt" w d lw 2, \
+"mesh_1_0.plt" w l , "ptcl_1_0.plt" w d lw 2, \
+"mesh_2_0.plt" w l , "ptcl_2_0.plt" w d lw 2, \
+"mesh_3_0.plt" w l , "ptcl_3_0.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_0.plt" w l , "ptcl_0_0.plt" w d lw 2, \
+"mesh_1_0.plt" w l , "ptcl_1_0.plt" w d lw 2, \
+"mesh_2_0.plt" w l , "ptcl_2_0.plt" w d lw 2, \
+"mesh_3_0.plt" w l , "ptcl_3_0.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_0.plt" w l , "ptcl_0_0.plt" w d lw 2, \
+"mesh_1_0.plt" w l , "ptcl_1_0.plt" w d lw 2, \
+"mesh_2_0.plt" w l , "ptcl_2_0.plt" w d lw 2, \
+"mesh_3_0.plt" w l , "ptcl_3_0.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_1.plt" w l , "ptcl_0_1.plt" w d lw 2, \
+"mesh_1_1.plt" w l , "ptcl_1_1.plt" w d lw 2, \
+"mesh_2_1.plt" w l , "ptcl_2_1.plt" w d lw 2, \
+"mesh_3_1.plt" w l , "ptcl_3_1.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_1.plt" w l , "ptcl_0_1.plt" w d lw 2, \
+"mesh_1_1.plt" w l , "ptcl_1_1.plt" w d lw 2, \
+"mesh_2_1.plt" w l , "ptcl_2_1.plt" w d lw 2, \
+"mesh_3_1.plt" w l , "ptcl_3_1.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_1.plt" w l , "ptcl_0_1.plt" w d lw 2, \
+"mesh_1_1.plt" w l , "ptcl_1_1.plt" w d lw 2, \
+"mesh_2_1.plt" w l , "ptcl_2_1.plt" w d lw 2, \
+"mesh_3_1.plt" w l , "ptcl_3_1.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_1.plt" w l , "ptcl_0_1.plt" w d lw 2, \
+"mesh_1_1.plt" w l , "ptcl_1_1.plt" w d lw 2, \
+"mesh_2_1.plt" w l , "ptcl_2_1.plt" w d lw 2, \
+"mesh_3_1.plt" w l , "ptcl_3_1.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_2.plt" w l , "ptcl_0_2.plt" w d lw 2, \
+"mesh_1_2.plt" w l , "ptcl_1_2.plt" w d lw 2, \
+"mesh_2_2.plt" w l , "ptcl_2_2.plt" w d lw 2, \
+"mesh_3_2.plt" w l , "ptcl_3_2.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_2.plt" w l , "ptcl_0_2.plt" w d lw 2, \
+"mesh_1_2.plt" w l , "ptcl_1_2.plt" w d lw 2, \
+"mesh_2_2.plt" w l , "ptcl_2_2.plt" w d lw 2, \
+"mesh_3_2.plt" w l , "ptcl_3_2.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_2.plt" w l , "ptcl_0_2.plt" w d lw 2, \
+"mesh_1_2.plt" w l , "ptcl_1_2.plt" w d lw 2, \
+"mesh_2_2.plt" w l , "ptcl_2_2.plt" w d lw 2, \
+"mesh_3_2.plt" w l , "ptcl_3_2.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_2.plt" w l , "ptcl_0_2.plt" w d lw 2, \
+"mesh_1_2.plt" w l , "ptcl_1_2.plt" w d lw 2, \
+"mesh_2_2.plt" w l , "ptcl_2_2.plt" w d lw 2, \
+"mesh_3_2.plt" w l , "ptcl_3_2.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_3.plt" w l , "ptcl_0_3.plt" w d lw 2, \
+"mesh_1_3.plt" w l , "ptcl_1_3.plt" w d lw 2, \
+"mesh_2_3.plt" w l , "ptcl_2_3.plt" w d lw 2, \
+"mesh_3_3.plt" w l , "ptcl_3_3.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_3.plt" w l , "ptcl_0_3.plt" w d lw 2, \
+"mesh_1_3.plt" w l , "ptcl_1_3.plt" w d lw 2, \
+"mesh_2_3.plt" w l , "ptcl_2_3.plt" w d lw 2, \
+"mesh_3_3.plt" w l , "ptcl_3_3.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_3.plt" w l , "ptcl_0_3.plt" w d lw 2, \
+"mesh_1_3.plt" w l , "ptcl_1_3.plt" w d lw 2, \
+"mesh_2_3.plt" w l , "ptcl_2_3.plt" w d lw 2, \
+"mesh_3_3.plt" w l , "ptcl_3_3.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_3.plt" w l , "ptcl_0_3.plt" w d lw 2, \
+"mesh_1_3.plt" w l , "ptcl_1_3.plt" w d lw 2, \
+"mesh_2_3.plt" w l , "ptcl_2_3.plt" w d lw 2, \
+"mesh_3_3.plt" w l , "ptcl_3_3.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_4.plt" w l , "ptcl_0_4.plt" w d lw 2, \
+"mesh_1_4.plt" w l , "ptcl_1_4.plt" w d lw 2, \
+"mesh_2_4.plt" w l , "ptcl_2_4.plt" w d lw 2, \
+"mesh_3_4.plt" w l , "ptcl_3_4.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_4.plt" w l , "ptcl_0_4.plt" w d lw 2, \
+"mesh_1_4.plt" w l , "ptcl_1_4.plt" w d lw 2, \
+"mesh_2_4.plt" w l , "ptcl_2_4.plt" w d lw 2, \
+"mesh_3_4.plt" w l , "ptcl_3_4.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_4.plt" w l , "ptcl_0_4.plt" w d lw 2, \
+"mesh_1_4.plt" w l , "ptcl_1_4.plt" w d lw 2, \
+"mesh_2_4.plt" w l , "ptcl_2_4.plt" w d lw 2, \
+"mesh_3_4.plt" w l , "ptcl_3_4.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_4.plt" w l , "ptcl_0_4.plt" w d lw 2, \
+"mesh_1_4.plt" w l , "ptcl_1_4.plt" w d lw 2, \
+"mesh_2_4.plt" w l , "ptcl_2_4.plt" w d lw 2, \
+"mesh_3_4.plt" w l , "ptcl_3_4.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_5.plt" w l , "ptcl_0_5.plt" w d lw 2, \
+"mesh_1_5.plt" w l , "ptcl_1_5.plt" w d lw 2, \
+"mesh_2_5.plt" w l , "ptcl_2_5.plt" w d lw 2, \
+"mesh_3_5.plt" w l , "ptcl_3_5.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_5.plt" w l , "ptcl_0_5.plt" w d lw 2, \
+"mesh_1_5.plt" w l , "ptcl_1_5.plt" w d lw 2, \
+"mesh_2_5.plt" w l , "ptcl_2_5.plt" w d lw 2, \
+"mesh_3_5.plt" w l , "ptcl_3_5.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_5.plt" w l , "ptcl_0_5.plt" w d lw 2, \
+"mesh_1_5.plt" w l , "ptcl_1_5.plt" w d lw 2, \
+"mesh_2_5.plt" w l , "ptcl_2_5.plt" w d lw 2, \
+"mesh_3_5.plt" w l , "ptcl_3_5.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_5.plt" w l , "ptcl_0_5.plt" w d lw 2, \
+"mesh_1_5.plt" w l , "ptcl_1_5.plt" w d lw 2, \
+"mesh_2_5.plt" w l , "ptcl_2_5.plt" w d lw 2, \
+"mesh_3_5.plt" w l , "ptcl_3_5.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_6.plt" w l , "ptcl_0_6.plt" w d lw 2, \
+"mesh_1_6.plt" w l , "ptcl_1_6.plt" w d lw 2, \
+"mesh_2_6.plt" w l , "ptcl_2_6.plt" w d lw 2, \
+"mesh_3_6.plt" w l , "ptcl_3_6.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_6.plt" w l , "ptcl_0_6.plt" w d lw 2, \
+"mesh_1_6.plt" w l , "ptcl_1_6.plt" w d lw 2, \
+"mesh_2_6.plt" w l , "ptcl_2_6.plt" w d lw 2, \
+"mesh_3_6.plt" w l , "ptcl_3_6.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_6.plt" w l , "ptcl_0_6.plt" w d lw 2, \
+"mesh_1_6.plt" w l , "ptcl_1_6.plt" w d lw 2, \
+"mesh_2_6.plt" w l , "ptcl_2_6.plt" w d lw 2, \
+"mesh_3_6.plt" w l , "ptcl_3_6.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_6.plt" w l , "ptcl_0_6.plt" w d lw 2, \
+"mesh_1_6.plt" w l , "ptcl_1_6.plt" w d lw 2, \
+"mesh_2_6.plt" w l , "ptcl_2_6.plt" w d lw 2, \
+"mesh_3_6.plt" w l , "ptcl_3_6.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_7.plt" w l , "ptcl_0_7.plt" w d lw 2, \
+"mesh_1_7.plt" w l , "ptcl_1_7.plt" w d lw 2, \
+"mesh_2_7.plt" w l , "ptcl_2_7.plt" w d lw 2, \
+"mesh_3_7.plt" w l , "ptcl_3_7.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_7.plt" w l , "ptcl_0_7.plt" w d lw 2, \
+"mesh_1_7.plt" w l , "ptcl_1_7.plt" w d lw 2, \
+"mesh_2_7.plt" w l , "ptcl_2_7.plt" w d lw 2, \
+"mesh_3_7.plt" w l , "ptcl_3_7.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_7.plt" w l , "ptcl_0_7.plt" w d lw 2, \
+"mesh_1_7.plt" w l , "ptcl_1_7.plt" w d lw 2, \
+"mesh_2_7.plt" w l , "ptcl_2_7.plt" w d lw 2, \
+"mesh_3_7.plt" w l , "ptcl_3_7.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_7.plt" w l , "ptcl_0_7.plt" w d lw 2, \
+"mesh_1_7.plt" w l , "ptcl_1_7.plt" w d lw 2, \
+"mesh_2_7.plt" w l , "ptcl_2_7.plt" w d lw 2, \
+"mesh_3_7.plt" w l , "ptcl_3_7.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_8.plt" w l , "ptcl_0_8.plt" w d lw 2, \
+"mesh_1_8.plt" w l , "ptcl_1_8.plt" w d lw 2, \
+"mesh_2_8.plt" w l , "ptcl_2_8.plt" w d lw 2, \
+"mesh_3_8.plt" w l , "ptcl_3_8.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_8.plt" w l , "ptcl_0_8.plt" w d lw 2, \
+"mesh_1_8.plt" w l , "ptcl_1_8.plt" w d lw 2, \
+"mesh_2_8.plt" w l , "ptcl_2_8.plt" w d lw 2, \
+"mesh_3_8.plt" w l , "ptcl_3_8.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_8.plt" w l , "ptcl_0_8.plt" w d lw 2, \
+"mesh_1_8.plt" w l , "ptcl_1_8.plt" w d lw 2, \
+"mesh_2_8.plt" w l , "ptcl_2_8.plt" w d lw 2, \
+"mesh_3_8.plt" w l , "ptcl_3_8.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_8.plt" w l , "ptcl_0_8.plt" w d lw 2, \
+"mesh_1_8.plt" w l , "ptcl_1_8.plt" w d lw 2, \
+"mesh_2_8.plt" w l , "ptcl_2_8.plt" w d lw 2, \
+"mesh_3_8.plt" w l , "ptcl_3_8.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_9.plt" w l , "ptcl_0_9.plt" w d lw 2, \
+"mesh_1_9.plt" w l , "ptcl_1_9.plt" w d lw 2, \
+"mesh_2_9.plt" w l , "ptcl_2_9.plt" w d lw 2, \
+"mesh_3_9.plt" w l , "ptcl_3_9.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_9.plt" w l , "ptcl_0_9.plt" w d lw 2, \
+"mesh_1_9.plt" w l , "ptcl_1_9.plt" w d lw 2, \
+"mesh_2_9.plt" w l , "ptcl_2_9.plt" w d lw 2, \
+"mesh_3_9.plt" w l , "ptcl_3_9.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_9.plt" w l , "ptcl_0_9.plt" w d lw 2, \
+"mesh_1_9.plt" w l , "ptcl_1_9.plt" w d lw 2, \
+"mesh_2_9.plt" w l , "ptcl_2_9.plt" w d lw 2, \
+"mesh_3_9.plt" w l , "ptcl_3_9.plt" w d lw 2, \
+
+pause .01
+splot \
+"mesh_0_9.plt" w l , "ptcl_0_9.plt" w d lw 2, \
+"mesh_1_9.plt" w l , "ptcl_1_9.plt" w d lw 2, \
+"mesh_2_9.plt" w l , "ptcl_2_9.plt" w d lw 2, \
+"mesh_3_9.plt" w l , "ptcl_3_9.plt" w d lw 2, \
+
+pause .01

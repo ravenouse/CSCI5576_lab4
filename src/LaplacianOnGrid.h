@@ -376,8 +376,25 @@ public:
     // |
     // -
 
-    //    iLOOP jLOOP { int p = pid(i,j) ; Qval[ p ] = x[p]; }
+       iLOOP jLOOP { int p = pid(i,j) ; Qval[ p ] = myPE+1; }
+    // modify the q values on the processor boundaries for testing purposes
+    // iLOOP jLOOP { int p = pid(i,j) ; printf("myPE: %d, Qval[%d] = %d\n", myPE, p, Qval[p]); }
+
+    // for ( int i = 1 ; i <= int(nField/4) ; ++i ) {Qval[i] = 0.; printf("myPE: %d, i, Qval[%d] = %d\n", myPE, i, Qval[i]);}
+    // for ( int i = int(nField/4) ; i <= 2*(nField) ; ++i ) {Qval[i] = 1.; printf("myPE: %d, i, Qval[%d] = %d\n", myPE, i, Qval[i]);}
+    // for ( int i = int(2*(nField)) ; i <= 3*(nField) ; ++i ) {Qval[i] = 2.; printf("myPE: %d, i, Qval[%d] = %d\n", myPE, i, Qval[i]);}
+    // for ( int i = int(3*(nField)) ; i <= 4*(nField) ; ++i ){Qval[i] = 3.; printf("myPE: %d, i, Qval[%d] = %d\n", myPE, i, Qval[i]);}
+
+    // iLOOP jLOOP { int p = pid(i,j) ; printf("after assign, myPE: %d, Qval[%d] = %d\n", myPE, p, Qval[p]); }
+
+
+    // hiLOOP hjLOOP { int p = pid(i,j) ; Qval[ p ] = 1; printf("after assigning, myPE: %d, Qval[%d] = %d\n", myPE, p, Qval[p]);} // on processor 1
+    // hiLOOP hjLOOP { int p = pid(i+ int(nRealx/2) ,j) ; Qval[ p ] = 2; } // on processor 2
+    // hiLOOP hjLOOP { int p = pid(i,j+ int(nRealy/2) ) ; Qval[ p ] = 3; } // on processor 3
+    // hiLOOP hjLOOP { int p = pid(i+ int(nRealx/2) ,j+ int(nRealy/2) ) ; Qval[ p ] = 4; } // on processor 4
     
+    // iLOOP jLOOP { int p = pid(i,j) ; printf("myPE: %d, Qval[%d] = %d\n", myPE, p, Qval[p]); }
+
     myMPI.PEsum(Qval); 
     
     // -
